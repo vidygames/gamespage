@@ -1,0 +1,262 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VidyGames: Solo Indie Games Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="icon" href="images/favicon.png">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: black;
+      color: #f0f0f0;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    .header-image {
+      width: 256px;
+      height: 256px;
+      border-radius: 0px;
+      margin: 0 auto 2rem auto;
+      display: block;
+    }
+
+    .games-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+
+    .game-card {
+      background-color: #2b1212;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .game-card img {
+      width: 100%;
+      height: auto;
+      aspect-ratio: 748 / 896;
+      object-fit: cover;
+    }
+
+    .game-card-content {
+      padding: 1rem;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .game-title {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .release-date {
+      font-size: 0.9rem;
+      color: #aaa;
+      margin-bottom: 0.75rem;
+    }
+
+    .game-description {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+      flex-grow: 1;
+    }
+
+    .store-links {
+	
+      display: flex;
+	  flex-wrap: nowrap;
+      gap: 30px;
+      justify-content: center;
+    }
+
+    .store-links img {
+      width: 48px;
+      height: 48px;
+    }
+	
+	.store-links a:hover img {
+		scale: 1.2;
+		rotate:2deg;
+		transition: all 0.2s ease-in-out;
+	}
+	
+	
+
+    .contact-icons {
+      text-align: center;
+      margin-top: 4rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    .contact-icons img {
+      width: 32px;
+      height: 32px;
+      transition: transform 0.2s ease;
+    }
+
+    .contact-icons a:hover img {
+      transform: scale(1.1);
+    }
+
+    .about-section {
+      text-align: center;
+      margin-top: 4rem;
+      font-size: 1rem;
+      color: #cccccc;
+    }
+
+    .copyright {
+      text-align: center;
+      margin-top: 2rem;
+      font-size: 0.9rem;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="images/logo.png" alt="Logo" class="header-image">
+
+    <div class="games-grid">
+
+      <!-- SoC -->
+      <div class="game-card">
+        <img src="images/01-SoC.png" alt="SYNTHESIS OF CORRUPTION">
+        <div class="game-card-content">
+          <div class="game-title">SYNTHESIS OF CORRUPTION</div>
+          <div class="release-date">Released: TBA</div>
+          <div class="game-description">Emergency Protocol activated: Dark Energy Particle Synthesis failed. Now you — late and alone — must navigate a facility where science and sanity have collapsed. Face entities born from dark energy corruption in this atmospheric FPS-horror hybrid where human ambition meets primal terror.</div>
+		  <p />
+          <div class="store-links">
+            <a href="https://store.steampowered.com/app/3629200/Synthesis_of_Corruption/"><img src="icons/steam.svg" alt="Steam"></a>
+			<a href="https://vidygames.itch.io/synthesis-of-corruption"><img src="icons/itch-io.svg" alt="itch.io Demo"></a>
+            <!-- 
+			<a href="#"><img src="icons/xbox.svg" alt="Xbox"></a>
+            <a href="#"><img src="icons/playstation.svg" alt="PlayStation"></a>
+            <a href="#"><img src="icons/nintendo.svg" alt="Nintendo"></a> 
+			-->
+          </div>
+        </div>
+      </div>
+	  
+	  <!-- SnowSquall -->
+      <div class="game-card">
+        <img src="images/02-SnowGrip.png" alt="SNOWSQUALL GRIP">
+        <div class="game-card-content">
+          <div class="game-title">SNOWSQUALL GRIP</div>
+          <div class="release-date">Released: 01 Aug, 2024 (Steam); 17 Apr, 2025 (XBox\PS\NSwitch)</div>
+          <div class="game-description">Your helicopter crashes in a remote, icy wilderness en route to delivering batteries to a mysterious research facility.
+Now, you must complete your delivery before you freeze to death or get eaten by a strange presence stalking you. Escape the snowy nightmare or be trapped forever — your call.</div>
+          <div class="store-links">
+            <a href="https://store.steampowered.com/app/3000420"><img src="icons/steam.svg" alt="Steam"></a>
+            <a href="https://www.xbox.com/en-us/games/store/snow-squall/9nbnzlwzxkd4"><img src="icons/xbox.svg" alt="Xbox"></a>
+            <a href="https://store.playstation.com/en-us/product/UP6718-PPSA28772_00-0671867849761801"><img src="icons/playstation.svg" alt="PlayStation"></a>
+            <a href="https://www.nintendo.com/us/store/products/snow-squall-grip-switch/"><img src="icons/nintendo.svg" alt="Nintendo"></a>
+          </div>
+        </div>
+      </div>
+	  
+	  <!-- Plasto -->
+      <div class="game-card">
+        <img src="images/03-Plasto.png" alt="PLASTOMORPHOSIS">
+        <div class="game-card-content">
+          <div class="game-title">PLASTOMORPHOSIS</div>
+          <div class="release-date">Released: 24 Jan, 2024 (Steam); 02 Aug, 2024 (XBox\PS\NSwitch)</div>
+          <div class="game-description">Evacuated from his hometown due to the dangerous bursts of dark energy, the ordinary citizen is trying to overcome and survive a series of events in a new reality, where living as a human being is not possible anymore. 3rd-person horror with fixed camera angles and retro-styled graphics.</div>
+          <div class="store-links">
+            <a href="https://store.steampowered.com/app/2459430/Plastomorphosis/"><img src="icons/steam.svg" alt="Steam"></a>
+            <a href="https://www.xbox.com/en-us/games/store/plastomorphosis/9np7r42vpmp3"><img src="icons/xbox.svg" alt="Xbox"></a>
+            <a href="https://store.playstation.com/en-us/product/UP6139-CUSA48346_00-0530279254388921"><img src="icons/playstation.svg" alt="PlayStation"></a>
+            <a href="https://www.nintendo.com/us/store/products/plastomorphosis-switch/"><img src="icons/nintendo.svg" alt="Nintendo"></a>
+          </div>
+        </div>
+      </div>
+	  
+	  <!-- Plasto2 -->
+      <div class="game-card">
+        <img src="images/04-Plasto2.png" alt="PLASTOMORPHOSIS: FINAL CORRUPTION">
+        <div class="game-card-content">
+          <div class="game-title">PLASTOMORPHOSIS: FINAL CORRUPTION.</div>
+          <div class="release-date">TBA</div>
+          <div class="game-description">The Government District is rocked by a dark energy surge, leading a resistance agent to a shocking revelation — the PLASTOMORPHOSIS experiment isn't over. It’s time to stop it before it’s POWER spirals out of CONTROL.</div>
+          <div class="store-links">
+            <a href="https://store.steampowered.com/app/3310520"><img src="icons/steam.svg" alt="Steam"></a>
+            <!--<a href="#"><img src="icons/xbox.svg" alt="Xbox"></a>
+            <a href="#"><img src="icons/playstation.svg" alt="PlayStation"></a>
+            <a href="#"><img src="icons/nintendo.svg" alt="Nintendo"></a>-->
+          </div>
+        </div>
+      </div>
+	  	  
+	  <!-- ForraderHero -->
+      <div class="game-card">
+        <img src="images/04-ForraderHero.png" alt="FORRADER HERO">
+        <div class="game-card-content">
+          <div class="game-title">FORRADER HERO</div>
+          <div class="release-date">Released: 02 Aug, 2022 (Early Access), 23 Jan, 2023 (Steam); 29 Mar, 2024 (XBox\PS\NSwitch)</div>
+          <div class="game-description">Turn-based game with roguelike elements where heroes can’t step back and must fight through the end to save their soul in ‘Forgotten Proto.World’ fighting hordes of monsters, undead creatures, and their overlords.</div>
+          <div class="store-links">
+            <a href="https://store.steampowered.com/app/2056490"><img src="icons/steam.svg" alt="Steam"></a>
+            <a href="https://www.microsoft.com/en-us/store/p/forrader-hero/9ppjnsg42691"><img src="icons/xbox.svg" alt="Xbox"></a>
+            <a href="https://store.playstation.com/en-us/product/UP0891-PPSA19739_00-FORRADERHERORAGA"><img src="icons/playstation.svg" alt="PlayStation"></a>
+            <a href="https://www.nintendo.com/us/store/products/forrader-hero-switch/"><img src="icons/nintendo.svg" alt="Nintendo"></a>
+          </div>
+        </div>
+      </div>
+	  
+	   <!-- resurs -->
+      <div class="game-card">
+        <img src="images/06-resurs.png" alt="RE.SURS ">
+        <div class="game-card-content">
+          <div class="game-title">RE.SURS</div>
+          <div class="release-date">Released: 08 Nov, 2021 (Steam); 12 Oct, 2023 (XBox\PS\NSwitch)</div>
+          <div class="game-description">Story-driven 2D side-scrolling shoot’em up where heroes tag-team and use their abilities to fight an interdimensional invasion of demons.</div>
+          <div class="store-links">
+            <a href="https://store.steampowered.com/app/1603260/ReSurs/"><img src="icons/steam.svg" alt="Steam"></a>
+            <a href="https://www.xbox.com/en-us/games/store/resurs/9p2zr7v52k2z"><img src="icons/xbox.svg" alt="Xbox"></a>
+            <a href="https://store.playstation.com/en-us/product/UP6139-CUSA34689_00-5188217272288673"><img src="icons/playstation.svg" alt="PlayStation"></a>
+            <a href="https://www.nintendo.com/us/store/products/re-surs-switch/"><img src="icons/nintendo.svg" alt="Nintendo"></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="about-section">
+      <p>My name is Oleh and I am a one-man team in "VidyGames" located in Ukraine.</p>
+	  <p>Follow me on social media. Sometimes I make posts about the games or plans for future games or just thoughts on my game development journey.</p>
+	  <p>Thanks for visiting!</p>
+      <div class="contact-icons">
+        <a href="mailto:contact@vidy.games" title="Email"><img src="icons/mail.svg" alt="Mail"></a>
+        <a href="https://twitter.com/vidygames" title="Twitter/X"><img src="icons/twitter.svg" alt="Twitter"></a>
+		<a href="https://bsky.app/profile/vidygames.bsky.social" title="Bluesky"><img src="icons/bluesky.svg" alt="Twitter"></a>
+        <a href="https://www.reddit.com/user/vidy-games" title="Reddit"><img src="icons/reddit.svg" alt="Reddit"></a>
+        <a href="https://www.youtube.com/channel/UCqqwuFRIvmih3u5tlL3tW1w" title="YouTube"><img src="icons/youtube.svg" alt="YouTube"></a>
+        <a href="https://discord.com/invite/6FZrtZGTkR" title="Discord"><img src="icons/discord.svg" alt="Discord"></a>
+        <a href="https://steamcommunity.com/groups/VidyGames" title="Steam Group"><img src="icons/steamgroup.svg" alt="Steam Community Group"></a>
+      </div>
+    </div>
+
+    <div class="copyright">
+      &copy; 2020–2025 VidyGames. All rights reserved.
+    </div>
+  </div>
+</body>
+</html>
